@@ -1,8 +1,12 @@
 # Linux_on_FVP_Base_Revc_2xAEMvA
+run linux on FVP, 
 
 
-The goal is to run linux 
-
+## Download FVP first
+This repo stick to the FVP_Base_RevC
+```
+wget https://developer.arm.com/-/media/Files/downloads/ecosystem-models/FVP_Base_RevC-2xAEMvA_11.17_21.tgz
+```
 
 ## Quickstart
 
