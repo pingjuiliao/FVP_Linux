@@ -14,22 +14,22 @@ build
 ```
 mkdir workspace
 
-# wrapper
+# packed script
 unzip fvp-latest-oe-uboot.zip -d ./workspace
 
 # FVP
-tar -xvf FVP_Base_RevC-2xAEMvA_11.17_21.tgz -d workspace
+tar -xvf FVP_Base_RevC-2xAEMvA_11.17_21.tgz -C workspace
 
-# file system
+# disk
 wget https://releases.linaro.org/archive/15.05/openembedded/aarch64/vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img.gz
-tar -xvf vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img.gz -C workspace
+tar -xvf vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img.gz > ./workspace/vexpress.img
 ```
 
 run
 ```
 cd workspace
-export DISK=../vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img
-export MODEL=../Base_RevC_AEMvA_pkg/models/Linux64_GCC-9.3/FVP_Base_RevC-2xAEMvA
+export DISK=./vexpress.img
+export MODEL=./Base_RevC_AEMvA_pkg/models/Linux64_GCC-9.3/FVP_Base_RevC-2xAEMvA
 ./run_model.sh
 ```
 
