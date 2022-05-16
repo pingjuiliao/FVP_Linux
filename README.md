@@ -22,7 +22,7 @@ tar -xvf FVP_Base_RevC-2xAEMvA_11.17_21.tgz -C workspace
 
 # disk
 wget https://releases.linaro.org/archive/15.05/openembedded/aarch64/vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img.gz
-tar -xvf vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img.gz > ./workspace/vexpress.img
+gunzip -c vexpress64-openembedded_minimal-armv8-gcc-4.9_20150522-720.img.gz > ./workspace/vexpress.img
 ```
 
 run

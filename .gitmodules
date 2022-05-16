@@ -1,0 +1,6 @@
+[submodule "arm-trusted-firmware"]
+	path = arm-trusted-firmware
+	url = https://github.com/ARM-software/arm-trusted-firmware
+[submodule "edk2"]
+	path = edk2
+	url = https://github.com/tianocore/edk2.git
